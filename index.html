@@ -596,7 +596,7 @@
                     <div class="ov-block">
                         <h4>Works</h4>
                         <ul>
-                            <li>JD 기반 자율주행 프로젝트 피봇팅 설계<span class="ov-date">2026.04</span></li>
+                            <li>CourseMate 수강편람 AI 플랫폼 (Upstage 연계 학술제)<span class="ov-date">2026.07</span></li>
                             <li>영양 분석 서비스 데이터 파이프라인 기획<span class="ov-date">2026.04</span></li>
                             <li>ASO 및 시장 데이터 분석 프로젝트<span class="ov-date">2026.03</span></li>
                             <li>AI 챗봇 심리적 효용성 인지과학 소논문<span class="ov-date">2022</span></li>
@@ -636,14 +636,60 @@
                 
                 <!-- 탭 메뉴 버튼 구역 -->
                 <div class="project-tabs">
-                    <button class="tab-btn active" onclick="switchTab('proj1')">인공지능 챗봇 인지과학 연구</button>
+                    <button class="tab-btn active" onclick="switchTab('projCM')">CourseMate 수강편람 AI 플랫폼</button>
+                    <button class="tab-btn" onclick="switchTab('proj1')">인공지능 챗봇 인지과학 연구</button>
                     <button class="tab-btn" onclick="switchTab('proj2')">YINSH 데이터 및 최적화 분석</button>
                     <button class="tab-btn" onclick="switchTab('proj3')">음식 분석 이미지 파이프라인</button>
-                    <button class="tab-btn" onclick="switchTab('proj4')">JD 기반 직무 피봇팅 설계</button>
+                </div>
+
+                <!-- CourseMate -->
+                <div id="projCM" class="project-content active">
+                    <h3 style="font-size: 18px; margin-bottom: 5px;">CourseMate — 수강편람 기반 AI 학사정보 플랫폼</h3>
+                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2026.07 | Upstage 연계 학술제 · 팀 ThinkSync(3인) · 담당: RAG 챗봇 답변 품질 검증, 시간표 생성 로직</p>
+
+                    <div class="star-box">
+                        <div class="star-item">
+                            <span class="star-badge">Situation</span>
+                            <div class="star-text">수강편람이 145쪽에 달하고 학번·학과별로 적용 기준이 달라, 학생이 본인에게 해당하는 규정을 직접 찾기 어려웠습니다.</div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">Task</span>
+                            <div class="star-text">수강편람 원문에 근거해 답하는 RAG 챗봇의 데이터 정제와 답변 품질 검증, 그리고 시간표 생성 로직 검증을 맡았습니다.</div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">Action</span>
+                            <div class="star-text">
+                                <ul>
+                                    <li>3~70쪽을 Markdown으로 변환한 뒤 원문과 대조해 헤더·표 파싱 오류 수정</li>
+                                    <li>한 청크 한 주제 원칙으로 143개 청크를 설계하고, 근거 섹션이 함께 표시되도록 메타데이터 구성</li>
+                                    <li>질문 유형별로 답변과 근거를 대조해 검색 정확도를 점검하고 청크 세분화. 수강편람에 없는 학번(2018 입학 등)은 학사정보시스템 확인을 안내하도록 응답 설계</li>
+                                    <li>시간표의 하드·소프트 조건, 기이수·동일과목 처리, 건물 이동 동선 벌점 검증</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">Result</span>
+                            <div class="star-text">챗봇·학사일정·원문 열람·로드맵·시간표 5개 기능을 하나의 웹으로 통합하고, 모든 답변에 근거 섹션과 원문 PDF 검증 구조를 구현해 <strong>Upstage 연계 학술제 수상</strong>. 아쉬운 점은 답변 평가가 수작업이라 정량 지표가 부족했던 것으로, 다음에는 질문 유형별 테스트셋과 채점 기준을 먼저 만들겠습니다.</div>
+                        </div>
+                    </div>
+
+                    <!-- 관련 자료 2개 -->
+                    <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px;">
+                        <a href="CourseMate_기획안.pdf" target="_blank"
+                           style="display:block; padding:18px 20px; background-color: var(--primary-light); border:1px solid var(--primary-border); border-radius:10px; text-decoration:none; color: var(--text-main);">
+                            <strong style="display:block; color: var(--primary); font-size:15px; margin-bottom:4px;">📄 학술 행사 기획안</strong>
+                            <span style="font-size:13px;">CourseMate 기획·구현 방법·사업화 방안 (PDF)</span>
+                        </a>
+                        <a href="CourseMate_발표.pdf" target="_blank"
+                           style="display:block; padding:18px 20px; background-color: var(--primary-light); border:1px solid var(--primary-border); border-radius:10px; text-decoration:none; color: var(--text-main);">
+                            <strong style="display:block; color: var(--primary); font-size:15px; margin-bottom:4px;">📊 학술제 발표 자료</strong>
+                            <span style="font-size:13px;">CourseMate 발표 PPT (PDF)</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- 프로젝트 1 -->
-                <div id="proj1" class="project-content active">
+                <div id="proj1" class="project-content">
                     <h3 style="font-size: 18px; margin-bottom: 5px;">인공지능 챗봇 서비스의 심리적 효용성에 관한 인지과학적 탐구</h3>
                     <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2022 | 세종대학교 인공지능학과 학업 소논문 연구</p>
                     
@@ -753,37 +799,6 @@
                             🔗 데이터 파이프라인 문서 보기
                         </a>
                     </div>
-                </div>
-
-                <!-- 프로젝트 4 -->
-                <div id="proj4" class="project-content">
-                    <h3 style="font-size: 18px; margin-bottom: 5px;">엔터프라이즈 직무 요구사항 기반 자율주행 프로젝트 설계</h3>
-                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2026.04 | 타겟 및 피봇팅 프로젝트</p>
-                    
-                    <div class="star-box">
-                        <div class="star-item">
-                            <span class="star-badge">Situation</span>
-                            <div class="star-text">학과 내 기존 기술 연구 프로젝트가 현업 산업계의 기술 채용 흐름과 다소 괴리되어 있어 연구 방향성의 전환이 필요했습니다.</div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Task</span>
-                            <div class="star-text">실제 대기업 및 산업계의 AI 개발 직무기술서(JD) 텍스트 데이터를 정량화하고 가설을 검증해 핵심 우선순위 역량을 도출해야 했습니다.</div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Action</span>
-                            <div class="star-text">
-                                <ul>
-                                    <li>주요 IT 기업의 기계학습/데이터 직무 JD 텍스트의 빈도와 의미망 분석</li>
-                                    <li>가설 검증을 통해 가장 수요가 급증하는 역량이 자율주행 데이터 제어 및 최적화임을 규명</li>
-                                    <li>이에 맞추어 학과 연구 프로젝트 구조를 자율주행 모델 검증으로 전면 피봇팅하는 타겟 로드맵 설계</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Result</span>
-                            <div class="star-text">수요 밀착형 역량 요소를 정확히 충족하도록 세종대 학과 연구 로드맵을 성공적으로 설계 및 보완하는 쾌거를 이루었습니다.</div>
-                        </div>
-                                        </div>
                 </div>
 
             </section>
