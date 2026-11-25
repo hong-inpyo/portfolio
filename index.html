@@ -414,6 +414,83 @@
             r: 8;
         }
 
+
+        /* 핵심 요약 (Expertise / Education / Works / Certificate / Skills / Etc.) */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 34px 28px;
+        }
+
+        .ov-block h4 {
+            font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: var(--text-heading);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        .ov-block ul {
+            list-style: none;
+        }
+
+        .ov-block li {
+            font-size: 13.5px;
+            line-height: 1.55;
+            color: var(--text-main);
+            margin-bottom: 9px;
+            word-break: keep-all;
+        }
+
+        .ov-block li .ov-date {
+            display: block;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .ov-block li .ov-hint {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .ov-skill-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 13.5px;
+        }
+
+        .ov-squares {
+            display: flex;
+            gap: 5px;
+        }
+
+        .ov-squares i {
+            width: 11px;
+            height: 11px;
+            background-color: var(--primary);
+            border: 2px solid var(--primary);
+            display: block;
+        }
+
+        .ov-squares i.off {
+            background-color: transparent;
+            border-color: var(--text-muted);
+        }
+
+        @media (max-width: 700px) {
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* 애니메이션 */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -491,6 +568,65 @@
                     수집한 비정형 미디어를 엔지니어 관점에서 처리할 수 있는 <strong>딥러닝 아키텍처적 체력</strong>을 겸비한 분석가입니다.<br><br>
                     수치적인 트래킹 분석에 그치지 않고, 복잡한 사용자 행동 양식 뒤에 숨어 있는 <strong>정성적인 커뮤니티 지향 가치</strong>를 정확하게 해석해 냅니다. 
                     현재 데이터베이스, 딥러닝, 운영체제 등 심화 학부 과정을 수강하며 기초 역량을 완벽하게 단련하고 있습니다.
+                </div>
+            </section>
+
+            <!-- 섹션 1.5: 핵심 요약 (소개와 프로젝트 사이) -->
+            <section id="overview" class="content-card">
+                <div class="section-title">핵심 요약 (Overview)</div>
+                <div class="overview-grid">
+
+                    <div class="ov-block">
+                        <h4>Expertise</h4>
+                        <ul>
+                            <li>데이터 분석 및 시각화 (Python, SQL)</li>
+                            <li>비정형 미디어 데이터 파이프라인 기획</li>
+                            <li>딥러닝 모델링 및 인지과학 기반 사용자 행동 해석</li>
+                        </ul>
+                    </div>
+
+                    <div class="ov-block">
+                        <h4>Education</h4>
+                        <ul>
+                            <li>고등학교 <span class="ov-hint">(졸업연도, 졸업)</span></li>
+                            <li>세종대학교 인공지능학과 <span class="ov-hint">(2022.03 ~ 재학 중)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="ov-block">
+                        <h4>Works</h4>
+                        <ul>
+                            <li>AI 챗봇 심리적 효용성 인지과학 소논문<span class="ov-date">2022</span></li>
+                            <li>ASO 및 시장 데이터 분석 프로젝트<span class="ov-date">2026.03</span></li>
+                            <li>영양 분석 서비스 데이터 파이프라인 기획<span class="ov-date">2026.04</span></li>
+                            <li>JD 기반 자율주행 프로젝트 피봇팅 설계<span class="ov-date">2026.04</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="ov-block">
+                        <h4>Certificate</h4>
+                        <ul>
+                            <li><span class="ov-hint">자격증 / 교육 이수명 (취득연도)</span></li>
+                            <li><span class="ov-hint">자격증 / 교육 이수명 (취득연도)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="ov-block">
+                        <h4>Skills</h4>
+                        <div class="ov-skill-row"><span>Python</span><span class="ov-squares"><i></i><i></i><i></i><i></i><i class="off"></i></span></div>
+                        <div class="ov-skill-row"><span>SQL</span><span class="ov-squares"><i></i><i></i><i></i><i class="off"></i><i class="off"></i></span></div>
+                        <div class="ov-skill-row"><span>PyTorch, TensorFlow</span><span class="ov-squares"><i></i><i></i><i></i><i class="off"></i><i class="off"></i></span></div>
+                        <div class="ov-skill-row"><span>C / C++</span><span class="ov-squares"><i></i><i></i><i></i><i class="off"></i><i class="off"></i></span></div>
+                    </div>
+
+                    <div class="ov-block">
+                        <h4>Etc.</h4>
+                        <ul>
+                            <li>지난 학기 평점 4.5 / 4.5 (만점)</li>
+                            <li>현 학기 중간고사 전과목 A+</li>
+                        </ul>
+                    </div>
+
                 </div>
             </section>
 
