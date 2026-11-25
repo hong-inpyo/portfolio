@@ -849,47 +849,61 @@
                 </table>
             </section>
 
-            <!-- 섹션 4: 학력 및 그래프 -->
+            <!-- 섹션 4: 학력 및 성적 -->
             <section id="education" class="content-card">
-                <div class="section-title">학력 사항 및 전공 성적 (Education)</div>
+                <div class="section-title">학업 성장 및 성적 (Education)</div>
                 <div class="intro-text" style="margin-bottom: 20px;">
-                    <strong>세종대학교 인공지능학과</strong> 학사 과정 (2022.03 ~ 현재 재학 중)<br>
-                    파이썬기반기계학습, 고급인공지능활용, 기계학습개론 등 핵심 기술 과목에서 <strong>우수한 전공 학점 평점</strong>을 견인하고 있으며, 
-                    수집된 정밀 데이터를 조율하는 시스템적 안목을 기르기 위해 현재 수강 중인 심화 교과(운영체제, 데이터베이스 등)에서도 <strong>중간고사 전과목 A+</strong>를 유지하고 있습니다.
+                    새로운 지식과 기술을 꾸준히 배우며 부족한 부분을 스스로 보완하는 자세로 학업에 임하고 있습니다.
+                    학기별 성적의 변화는 배움에 대한 열의와 맡은 일에 꾸준히 노력하는 성실함을 보여줍니다.
+                    앞으로도 매 학기의 경험을 밑거름 삼아 전공 역량을 차근차근 넓히고 성장해 나가겠습니다.
                 </div>
 
-                <!-- 인터랙티브 SVG 차트 -->
+                <!-- 학기별 평점 추이 그래프 -->
                 <div class="chart-wrapper">
-                    <h4 style="margin-bottom: 15px; font-weight: 700; color: var(--text-heading);">세종대학교 주요 이수 과목 성적 시각화 (평점 4.5 만점 기준)</h4>
-                    <svg class="chart-svg" viewBox="0 0 800 300">
-                        <!-- 가로 기준선 -->
-                        <line x1="50" y1="50" x2="750" y2="50" class="grid-line"></line>
-                        <line x1="50" y1="125" x2="750" y2="125" class="grid-line"></line>
-                        <line x1="50" y1="200" x2="750" y2="200" class="grid-line"></line>
-                        <line x1="50" y1="250" x2="750" y2="250" class="grid-line"></line>
+                    <h4 style="margin-bottom: 8px; font-weight: 700; color: var(--text-heading);">학기별 평균 평점</h4>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">4.5점 만점 기준</p>
+                    <div style="width: 100%; overflow-x: auto;">
+                    <svg class="chart-svg" style="min-width: 680px;" viewBox="0 0 800 320" role="img" aria-labelledby="gpaChartTitle gpaChartDesc">
+                        <title id="gpaChartTitle">학기별 평균 평점 추이</title>
+                        <desc id="gpaChartDesc">2022년 1학기 3.78, 2022년 2학기 3.68, 2023년 1학기 4.21, 2023년 2학기 3.86, 2024년 1학기 4.5점입니다.</desc>
 
-                        <!-- 성적 라인 플롯 (A+: 50(만점선), A0: 80, B+: 125) -->
-                        <polyline class="chart-line" points="80,125 190,125 300,80 410,50 520,50 630,50 740,50"></polyline>
+                        <!-- 가로 기준선 및 세로축 눈금 -->
+                        <line x1="85" y1="55" x2="755" y2="55" class="grid-line"></line>
+                        <line x1="85" y1="118" x2="755" y2="118" class="grid-line"></line>
+                        <line x1="85" y1="182" x2="755" y2="182" class="grid-line"></line>
+                        <line x1="85" y1="245" x2="755" y2="245" class="grid-line"></line>
 
-                        <!-- 데이터 포인트 노드 -->
-                        <circle class="point-node" cx="80" cy="125" r="6" title="컴퓨터구조 (B+)"></circle>
-                        <circle class="point-node" cx="190" cy="125" r="6" title="알고리즘및실습 (B+)"></circle>
-                        <circle class="point-node" cx="300" cy="80" r="6" title="선형대수및프로그래밍 (A0)"></circle>
-                        <circle class="point-node" cx="410" cy="50" r="6" title="파이썬기반기계학습 (A+)"></circle>
-                        <circle class="point-node" cx="520" cy="50" r="6" title="고급인공지능활용 (A+)"></circle>
-                        <circle class="point-node" cx="630" cy="50" r="6" title="자료구조및실습 (A+)"></circle>
-                        <circle class="point-node" cx="740" cy="50" r="6" title="데이터베이스/딥러닝/OS (A+)"></circle>
+                        <text x="68" y="60" text-anchor="end" font-size="12" fill="var(--text-muted)">4.5</text>
+                        <text x="68" y="123" text-anchor="end" font-size="12" fill="var(--text-muted)">4.0</text>
+                        <text x="68" y="187" text-anchor="end" font-size="12" fill="var(--text-muted)">3.5</text>
+                        <text x="68" y="250" text-anchor="end" font-size="12" fill="var(--text-muted)">3.0</text>
 
-                        <!-- 하단 과목 라벨 -->
-                        <text x="80" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">컴구</text>
-                        <text x="190" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">알고리즘</text>
-                        <text x="300" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">선형대수</text>
-                        <text x="410" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">기계학습</text>
-                        <text x="520" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">고급AI</text>
-                        <text x="630" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">자료구조</text>
-                        <text x="740" y="275" text-anchor="middle" font-size="11" fill="var(--text-muted)">현 학기 심화</text>
+                        <!-- 학기별 평점 연결선: 3.78 → 3.68 → 4.21 → 3.86 → 4.50 -->
+                        <polyline class="chart-line" points="125,146 275,159 425,92 575,136 725,55"></polyline>
+
+                        <!-- 평점 데이터 포인트 -->
+                        <circle class="point-node" cx="125" cy="146" r="7"><title>2022년 1학기: 3.78</title></circle>
+                        <circle class="point-node" cx="275" cy="159" r="7"><title>2022년 2학기: 3.68</title></circle>
+                        <circle class="point-node" cx="425" cy="92" r="7"><title>2023년 1학기: 4.21</title></circle>
+                        <circle class="point-node" cx="575" cy="136" r="7"><title>2023년 2학기: 3.86</title></circle>
+                        <circle class="point-node" cx="725" cy="55" r="7"><title>2024년 1학기: 4.50</title></circle>
+
+                        <!-- 각 학기 평점 표시 -->
+                        <text x="125" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="var(--text-heading)">3.78</text>
+                        <text x="275" y="181" text-anchor="middle" font-size="14" font-weight="700" fill="var(--text-heading)">3.68</text>
+                        <text x="425" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="var(--text-heading)">4.21</text>
+                        <text x="575" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="var(--text-heading)">3.86</text>
+                        <text x="725" y="38" text-anchor="middle" font-size="14" font-weight="700" fill="var(--text-heading)">4.50</text>
+
+                        <!-- 학기 라벨 -->
+                        <text x="125" y="280" text-anchor="middle" font-size="12" fill="var(--text-muted)">2022년 1학기</text>
+                        <text x="275" y="280" text-anchor="middle" font-size="12" fill="var(--text-muted)">2022년 2학기</text>
+                        <text x="425" y="280" text-anchor="middle" font-size="12" fill="var(--text-muted)">2023년 1학기</text>
+                        <text x="575" y="280" text-anchor="middle" font-size="12" fill="var(--text-muted)">2023년 2학기</text>
+                        <text x="725" y="280" text-anchor="middle" font-size="12" fill="var(--text-muted)">2024년 1학기</text>
                     </svg>
-                    <p style="font-size: 13px; color: var(--text-muted); margin-top: 15px;">* 전공 학습 과목이 지속적으로 심화될수록 성적이 수렴상승(A+)하는 학업 탄력성을 보여줍니다.</p>
+                    </div>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-top: 10px;">* 학기별 평점은 제공한 성적을 기준으로 표시했습니다.</p>
                 </div>
             </section>
 
