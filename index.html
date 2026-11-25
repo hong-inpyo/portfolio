@@ -648,27 +648,37 @@
 
                     <div class="star-box">
                         <div class="star-item">
-                            <span class="star-badge">Situation</span>
-                            <div class="star-text">수강편람이 145쪽에 달하고 학번·학과별로 적용 기준이 달라, 학생이 본인에게 해당하는 규정을 직접 찾기 어려웠습니다.</div>
+                            <span class="star-badge">기술 스택</span>
+                            <div class="star-text">Python, FastAPI, ChromaDB, Upstage Document Parse, Solar Embedding 2, GitHub, Render</div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Task</span>
-                            <div class="star-text">수강편람 원문에 근거해 답하는 RAG 챗봇의 데이터 정제와 답변 품질 검증, 그리고 시간표 생성 로직 검증을 맡았습니다.</div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Action</span>
+                            <span class="star-badge">담당 업무</span>
                             <div class="star-text">
                                 <ul>
-                                    <li>3~70쪽을 Markdown으로 변환한 뒤 원문과 대조해 헤더·표 파싱 오류 수정</li>
-                                    <li>한 청크 한 주제 원칙으로 143개 청크를 설계하고, 근거 섹션이 함께 표시되도록 메타데이터 구성</li>
-                                    <li>질문 유형별로 답변과 근거를 대조해 검색 정확도를 점검하고 청크 세분화. 수강편람에 없는 학번(2018 입학 등)은 학사정보시스템 확인을 안내하도록 응답 설계</li>
-                                    <li>시간표의 하드·소프트 조건, 기이수·동일과목 처리, 건물 이동 동선 벌점 검증</li>
+                                    <li>수강편람(3~70쪽) Markdown 변환 및 파싱 오류 정제</li>
+                                    <li>143개 청크·메타데이터 설계와 RAG 답변 품질 검증</li>
+                                    <li>시간표 생성 로직(하드·소프트 조건, 동선 벌점) 검증</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Result</span>
-                            <div class="star-text">챗봇·학사일정·원문 열람·로드맵·시간표 5개 기능을 하나의 웹으로 통합하고, 모든 답변에 근거 섹션과 원문 PDF 검증 구조를 구현해 <strong>Upstage 연계 학술제 수상</strong>. 아쉬운 점은 답변 평가가 수작업이라 정량 지표가 부족했던 것으로, 다음에는 질문 유형별 테스트셋과 채점 기준을 먼저 만들겠습니다.</div>
+                            <span class="star-badge">성과</span>
+                            <div class="star-text">
+                                <ul>
+                                    <li><strong>Upstage 연계 학술제 수상</strong></li>
+                                    <li>145쪽 수강편람을 5개 기능의 단일 웹 서비스로 통합</li>
+                                    <li>모든 답변에 근거 섹션과 원문 PDF 검증 구조 적용</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">해결 순서</span>
+                            <div class="star-text">답변 오류 발견 → 근거 청크 확인 → 원인 구분(파싱 오류 / 검색 누락 / 청크 과대) → 원문 대조 후 수정·청크 세분화 → 재질의로 검증<br>
+                            └ 편람에 없는 학번 질문 → 학사정보시스템 확인 안내로 응답 설계</div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">회고</span>
+                            <div class="star-text">답변 평가를 수작업으로 해 정량 지표가 부족했던 점이 아쉬웠습니다. 데이터 정제 품질이 답변 품질을 좌우함을 배웠고, 다음에는 질문 유형별 테스트셋과 채점 기준을 먼저 만들겠습니다.</div>
                         </div>
                     </div>
 
@@ -688,30 +698,35 @@
                 <!-- 프로젝트 1 -->
                 <div id="proj1" class="project-content">
                     <h3 style="font-size: 18px; margin-bottom: 5px;">인공지능 챗봇 서비스의 심리적 효용성에 관한 인지과학적 탐구</h3>
-                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2022 | 세종대학교 인공지능학과 학업 소논문 연구</p>
+                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2022 | 세종대학교 인공지능학과 학업 소논문 연구 · 4인 팀</p>
                     
                     <div class="star-box">
                         <div class="star-item">
-                            <span class="star-badge">Situation</span>
-                            <div class="star-text">단순히 챗봇의 알고리즘적 응답 성능만을 평가하는 기존 방식은 유저의 정서적 애착과 실효적인 심리 치료 효율을 정교하게 설명하는 데 한계가 있었습니다.</div>
+                            <span class="star-badge">기술 스택</span>
+                            <div class="star-text">문헌 기반 인지과학·뇌과학 분석, 신경전달물질(도파민·세로토닌·옥시토신) 이론, 불쾌한 골짜기 이론</div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Task</span>
-                            <div class="star-text">텍스트와 같은 챗봇과의 인터랙션 과정에서 생성되는 교감 메커니즘을 뇌과학 및 인지과학 원리에 기반하여 분석하고, 애완동물 소통 방식과 뇌의 생리적인 반응 차이를 규명해야 했습니다.</div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Action</span>
+                            <span class="star-badge">담당 업무</span>
                             <div class="star-text">
                                 <ul>
-                                    <li>교감 형성 단계에서 도파민, 세로토닌 수용 유전자와 옥시토신 분비 추이를 추론 분석</li>
-                                    <li>애완동물에서 기인하는 옥시토신 중심 유대감과 사물 대상 애착에서 관찰되는 도파민계 신호 차이 비교</li>
-                                    <li>아바타 형태가 모사되었을 때 일어나는 인공지능 유저의 불쾌한 골짜기(Uncanny Valley) 역작용을 밝혀내며 텍스트 기반 챗봇의 안정감 입증</li>
+                                    <li>교감 형성 단계의 도파민·세로토닌 수용 유전자, 옥시토신 분비 추이 추론 분석</li>
+                                    <li>애완동물 대상 옥시토신 중심 유대감과 사물 대상 도파민계 신호 비교</li>
+                                    <li>아바타 모사 시 불쾌한 골짜기 역작용을 분석해 텍스트 챗봇의 안정감 논증</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Result</span>
-                            <div class="star-text">단순 시각적 모사보다 언어적 언어 소통 인터랙션의 질이 심리 교감 가치에 훨씬 더 결정적인 역할을 한다는 학술적 증명을 완성했습니다.</div>
+                            <span class="star-badge">성과</span>
+                            <div class="star-text">
+                                <ul>
+                                    <li>시각적 모사보다 언어 소통 인터랙션의 질이 심리 교감에 더 결정적임을 논증</li>
+                                    <li>인공지능학과 소논문 완성 (전문 PDF 공개)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">회고</span>
+                            <div class="star-text">추론 중심 분석이라 실험·설문 데이터로 검증하지 못한 점이 한계였습니다. AI 서비스의 가치를 성능뿐 아니라 사용자 심리 관점에서 평가할 수 있음을 배웠습니다.</div>
                         </div>
                     </div>
                     <div style="margin-top: 15px;">
@@ -726,30 +741,38 @@
                 <!-- 프로젝트 2 -->
                 <div id="proj2" class="project-content">
                     <h3 style="font-size: 18px; margin-bottom: 5px;">앱 스토어 최적화(ASO) 및 시장 데이터 분석 프로젝트</h3>
-                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2026.03 | 학과 데이터 분석 탐구</p>
+                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 15px;">2026.03 | 학과 데이터 분석 탐구 · 팀 테세우스(4인)</p>
                     
                     <div class="star-box">
                         <div class="star-item">
-                            <span class="star-badge">Situation</span>
-                            <div class="star-text">개발한 앱의 가시성을 높이고 고관여 사용자의 인입 트렌드를 사전에 정확하게 예측할 필요가 있었습니다.</div>
+                            <span class="star-badge">기술 스택</span>
+                            <div class="star-text">Python, 통계 기법(키워드 빈도 분석), 다차원 그래프 시각화</div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Task</span>
-                            <div class="star-text">유사 경쟁사 앱스토어 메타데이터 수집, 타겟 키워드 추출, 그리고 유저 반응 모델링의 핵심이 될 시계열 대중성 데이터 설계가 요구되었습니다.</div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Action</span>
+                            <span class="star-badge">담당 업무</span>
                             <div class="star-text">
                                 <ul>
-                                    <li>경쟁 앱 군의 상세 메타데이터(타이틀, 디스크립션 등)를 수집하여 정량적 차이 분석</li>
-                                    <li>유입 가시성과 밀접한 핵심 검색 키워드 빈도(Frequency)를 Python 및 통계 기법을 동원하여 가공 처리</li>
-                                    <li>인기 지표(Popularity)와 대중성 트렌드를 다차원 그래프로 시각화해 피드백 패턴 구조화</li>
+                                    <li>경쟁 앱 군 메타데이터(타이틀·디스크립션) 수집 및 정량 비교</li>
+                                    <li>핵심 검색 키워드 빈도(Frequency) 가공</li>
+                                    <li>인기 지표·대중성 트렌드 시각화 및 피드백 패턴 구조화</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Result</span>
-                            <div class="star-text">유저 인입 단계부터 타겟 전환까지의 퍼널을 분석하여, 노출도가 극대화될 수 있는 핵심 키워드 가이드를 수립했습니다.</div>
+                            <span class="star-badge">성과</span>
+                            <div class="star-text">
+                                <ul>
+                                    <li>유입~전환 퍼널 기준으로 노출도를 높일 핵심 키워드 가이드 수립</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">해결 순서</span>
+                            <div class="star-text">경쟁 앱 선정 → 메타데이터 수집 → 키워드 빈도 분석 → 인기 지표·트렌드 시각화 → 핵심 키워드 가이드 수립</div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">회고</span>
+                            <div class="star-text">키워드 가이드를 수립했지만 실제 노출·전환 변화로 검증하지 못한 점이 아쉬웠습니다. 다음에는 적용 전후를 비교할 지표를 먼저 정하겠습니다.</div>
                         </div>
                     </div>
                 </div>
@@ -761,26 +784,36 @@
                     
                     <div class="star-box">
                         <div class="star-item">
-                            <span class="star-badge">Situation</span>
-                            <div class="star-text">음식 이미지 등 대량의 비정형 유저 미디어가 유입될 시 데이터 처리 지연 현상 및 모델 인풋 무결성을 제어하기 어려웠습니다.</div>
+                            <span class="star-badge">기술 스택</span>
+                            <div class="star-text">Streamlit, FastAPI, PyTorch(YOLO11-seg · Swin Transformer · Depth Anything V2), Python 규칙 기반 영양 엔진, JSON 영양 DB, Docker</div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Task</span>
-                            <div class="star-text">서버 단에서 비정형 이미지 데이터가 딥러닝 분석 모델 입력으로 원활히 이어질 수 있도록 엔드투엔드 처리 아키텍처와 일정 타임라인을 통제해야 했습니다.</div>
-                        </div>
-                        <div class="star-item">
-                            <span class="star-badge">Action</span>
+                            <span class="star-badge">담당 업무</span>
                             <div class="star-text">
                                 <ul>
-                                    <li>딥러닝 입력을 위한 이미지 수집 가이드 및 리사이징, 표준 전처리 파이프라인 흐름 정의</li>
-                                    <li>유입 로그와 정형 메타데이터 테이블의 효과적인 키(Key) 매핑 아웃라인 설계</li>
-                                    <li>엔지니어와 개발 일정 조율을 위한 기술적 아웃라인 문서 수립 주도</li>
+                                    <li>음식 사진·사용자 정보 입력부터 맞춤 피드백 출력까지 아키텍처와 사용자 플로우 설계</li>
+                                    <li>모델별 전처리 기준(YOLO 640, Swin 224, Depth 384/518)과 학습 데이터셋 선정</li>
+                                    <li>성능 평가 지표·개발 일정 수립 및 엔지니어 협업용 기술 문서 작성</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="star-item">
-                            <span class="star-badge">Result</span>
-                            <div class="star-text">비정형 미디어가 데이터 수집 및 정제 단계를 거쳐 모델로 적재되는 프로세스 병목 예측 가이드를 완성했습니다.</div>
+                            <span class="star-badge">성과</span>
+                            <div class="star-text">
+                                <ul>
+                                    <li>입력→전처리→모델→영양 분석→피드백 엔드투엔드 파이프라인 설계 문서 완성</li>
+                                    <li>비정형 이미지가 모델로 적재되는 과정의 병목 예측 가이드 정리</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">해결 순서</span>
+                            <div class="star-text">입력(음식 사진·사용자 정보) → 전처리 → YOLO11-seg 분할 → Swin 분류 · Depth 깊이 추정 → 영양 DB 매핑 → 맞춤 피드백<br>
+                        └ 깊이맵만으로 중량(g) 환산이 어려워 참조 객체·음식별 밀도 테이블·보정식을 추가 설계</div>
+                        </div>
+                        <div class="star-item">
+                            <span class="star-badge">회고</span>
+                            <div class="star-text">깊이 추정만으로는 실제 중량을 알 수 없다는 한계를 확인하고 보정 요소를 설계에 반영했습니다. 기획 단계라 성능을 직접 측정하지 못했고, 다음에는 프로토타입으로 평가 지표를 검증하겠습니다.</div>
                         </div>
                     </div>
                                         <div class="project-section" style="margin-top: 30px; padding: 20px; background-color: #ffffff; border: 1px solid #eee; border-radius: 10px;">
