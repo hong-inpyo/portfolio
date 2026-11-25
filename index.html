@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
-            --primary: #ff6f0f; /* 당근 오렌지 */
-            --primary-hover: #e55e00;
-            --primary-light: #fff7ed;
-            --primary-border: #ffedd5;
+            --primary: #ffe300; /* 카카오뱅크 옐로우 */
+            --primary-text: #1e1e1e; /* 노란색 위/흰 배경 위 글자용 */
+            --primary-hover: #d9c100;
+            --primary-light: #fffbe0;
+            --primary-border: #fff180;
             --dark: #0f172a;
             --dark-surface: #1e293b;
             --light-bg: #f8fafc;
@@ -35,8 +36,9 @@
             --text-heading: #f1f5f9;
             --text-muted: #64748b;
             --shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            --primary-light: rgba(255, 111, 15, 0.08);
-            --primary-border: rgba(255, 111, 15, 0.2);
+            --primary-light: rgba(255, 227, 0, 0.08);
+            --primary-border: rgba(255, 227, 0, 0.2);
+            --primary-text: #ffe300;
         }
 
         * {
@@ -74,7 +76,7 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 800;
             font-size: 24px;
-            color: var(--primary);
+            color: var(--primary-text);
             text-decoration: none;
             letter-spacing: -0.5px;
         }
@@ -94,7 +96,7 @@
         }
 
         .nav-link:hover, .nav-link.active {
-            color: var(--primary);
+            color: var(--primary-text);
         }
 
         .theme-toggle {
@@ -110,7 +112,7 @@
 
         .theme-toggle:hover {
             background-color: var(--primary-light);
-            color: var(--primary);
+            color: var(--primary-text);
         }
 
         /* 전체 레이아웃 구역 */
@@ -184,7 +186,7 @@
         }
 
         .contact-item i {
-            color: var(--primary);
+            color: var(--primary-text);
             width: 20px;
             text-align: center;
             font-size: 16px;
@@ -228,7 +230,7 @@
         }
 
         .intro-text strong {
-            color: var(--primary);
+            color: var(--primary-text);
             font-weight: 700;
         }
 
@@ -258,13 +260,13 @@
 
         .tab-btn:hover {
             border-color: var(--primary);
-            color: var(--primary);
+            color: var(--primary-text);
         }
 
         .tab-btn.active {
             background-color: var(--primary);
             border-color: var(--primary);
-            color: white;
+            color: #1e1e1e;
         }
 
         .project-content {
@@ -293,7 +295,7 @@
         .star-badge {
             background-color: var(--primary-light);
             border: 1px solid var(--primary-border);
-            color: var(--primary);
+            color: var(--primary-text);
             font-weight: 700;
             font-size: 13px;
             padding: 3px 10px;
@@ -316,7 +318,7 @@
             margin-bottom: 4px;
         }
 
-        /* 당근 핏 박스 */
+        /* 핏 박스 */
         .fit-banner {
             margin-top: 25px;
             background-color: var(--primary-light);
@@ -327,7 +329,7 @@
         }
 
         .fit-banner strong {
-            color: #ea580c;
+            color: var(--primary-text);
             display: block;
             font-size: 15.5px;
             margin-bottom: 6px;
@@ -366,7 +368,7 @@
         }
 
         .skills-table strong {
-            color: var(--primary);
+            color: var(--primary-text);
         }
 
         /* 학업 추이 그래프 SVG */
@@ -395,7 +397,7 @@
 
         .chart-svg .chart-line {
             fill: none;
-            stroke: var(--primary);
+            stroke: var(--primary-text);
             stroke-width: 4;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -403,7 +405,7 @@
 
         .chart-svg .point-node {
             fill: var(--light-surface);
-            stroke: var(--primary);
+            stroke: var(--primary-text);
             stroke-width: 3;
             cursor: pointer;
             transition: var(--transition);
@@ -476,7 +478,7 @@
             width: 11px;
             height: 11px;
             background-color: var(--primary);
-            border: 2px solid var(--primary);
+            border: 2px solid var(--primary-text);
             display: block;
         }
 
